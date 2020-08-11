@@ -1,0 +1,28 @@
+2020年8月11号
+	
+	今天是期中考试，早上8点15开始考试。今天还下了大暴雨。延迟开考了15分钟。考完试就到了第三节课。第三节课老师
+让大家在教室里找错。
+
+	今天下午的时候讲了ssm整合redis框架的搭建还有实现，主要是添加部门，然后把数据存到Redis里面。首先找到pom.xml文件，
+然后把Redis缓存的代码给复制粘贴到pom.xml中。然后再复制配置文件redis-config.properties和applicationContext-redis.xml，
+打开springcontext将value里边的名称换成redis-config.properties然后找到web.xml将applicationContext后边加上一个*，这样就配置
+好了Redis框架。然后在service的添加部门方法里面写redis方法，@autowired ；private RedisTemplate redisTemplate然后在添加部门
+方法里写redisTemplate.boundHashOps("dlist").put("dept",dept.toString());然后在controller里面写存储到redis数据的方法。一定要启动
+redis的软件和他的cmd执行框，这样运行才能顺利添加进去。然后自习课就把redis的代码边敲边理解，虽然一直在报错，但是在放学前redis
+给搞明白了，就是添加部门之后不能直接显示出来添加的值，需要刷新一下才能展示出来，我就问了一下老师才知道该怎么做。
+
+	晚自习的时候把今天的代码作业给做了。是ssm双表整合项目增删改查和添加部门存入redis还有个echars报表。
+
+	总结：今天的雨挺大的，考试的时候出了小错误还是在考试最后几分钟找到的，不然也得扣个几分，做题还是得注意细心点。
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
